@@ -33,5 +33,6 @@ public class EnemyGenerator : MonoBehaviour
 
 		enemy.gameObject.SetActive(true);
 		enemy.transform.position = spawnPoint;
+		
 	}
 }

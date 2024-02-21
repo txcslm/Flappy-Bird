@@ -18,7 +18,7 @@ public class Bird : MonoBehaviour
 
 	private void OnEnable() =>
 		_handler.CollisionDetected += ProcessCollision;
-
+	
 	private void OnDisable() =>
 		_handler.CollisionDetected -= ProcessCollision;
 

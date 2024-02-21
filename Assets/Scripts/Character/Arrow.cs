@@ -1,6 +1,4 @@
 using UnityEngine;
 
-public class Arrow : MonoBehaviour, IInteractable
-{
-		
-}
+[RequireComponent(typeof(Rigidbody2D))]
+public class Arrow : MonoBehaviour, IInteractable { }

@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 845473512766007536}
   - component: {fileID: 670615119944324874}
   - component: {fileID: 69728368807202788}
-  - component: {fileID: -6349328835780168136}
   - component: {fileID: 7303551099746217371}
   m_Layer: 0
   m_Name: EnemyShoot
@@ -172,19 +171,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-6349328835780168136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7398326298619439647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ca51c1dfa00477ca6c6937114106a6d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
 --- !u!114 &7303551099746217371
 MonoBehaviour:
   m_ObjectHideFlags: 0

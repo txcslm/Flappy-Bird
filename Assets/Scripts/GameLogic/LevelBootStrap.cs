@@ -6,8 +6,6 @@ public class LevelBootStrap : MonoBehaviour
 	[SerializeField] private EnemyGenerator _enemyGenerator;
 	[SerializeField] private ObjectPool _pool;
 	[SerializeField] private Game _game;
-	[SerializeField] private ObjectRemover _objectRemover;
-	
 	
 	private ScoreHandler _scoreHandler;
 	private EnemiesHandler _enemiesHandler;
