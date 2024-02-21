@@ -9,8 +9,10 @@ public class ObjectPool : MonoBehaviour
 	private Queue<Enemy> _pool = new Queue<Enemy>();
 	private EnemiesHandler _enemiesHandler;
 	
-
 	public IEnumerable<Enemy> PooledObjects => _pool;
+	
+	public void Reset() =>
+		_pool.Clear();
 
 	public void Initialize(EnemiesHandler enemiesHandler) =>
 		_enemiesHandler = enemiesHandler;
@@ -20,7 +22,6 @@ public class ObjectPool : MonoBehaviour
 		if (_pool.Count == 0)
 		{
 			Enemy enemy = Instantiate(_prefab, _container, true);
-
 			_enemiesHandler.Add(enemy);
 
 			return enemy;
@@ -34,7 +35,4 @@ public class ObjectPool : MonoBehaviour
 		_pool.Enqueue(enemy);
 		enemy.gameObject.SetActive(false);
 	}
-
-	public void Reset() =>
-		_pool.Clear();
 }

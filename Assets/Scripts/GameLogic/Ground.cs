@@ -1,5 +1,3 @@
 using UnityEngine;
 
-public class Ground : MonoBehaviour, IInteractable
-{
-}
+public class Ground : MonoBehaviour, IInteractable { }

@@ -40,8 +40,6 @@ public class EnemyBulletShooter : MonoBehaviour
 		
 	}
 	
-	private void DestroyBulletDelayed(Bullet bullet, float delay)
-	{
+	private void DestroyBulletDelayed(Bullet bullet, float delay) =>
 		Destroy(bullet.gameObject, delay);
-	}
 }

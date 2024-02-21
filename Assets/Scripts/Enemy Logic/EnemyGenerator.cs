@@ -7,8 +7,6 @@ public class EnemyGenerator : MonoBehaviour
 	[SerializeField] private float _lowerBound;
 	[SerializeField] private float _upperBound;
 	[SerializeField] private ObjectPool _pool;
-
-
 	
 	public void Initialize() =>
 		StartCoroutine(GenerateEnemies());

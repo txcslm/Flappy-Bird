@@ -22,8 +22,6 @@ public class ArrowShooter : MonoBehaviour
 		DestroyArrowDelayed(arrow, _destroyDelay);
 	}
 
-	private void DestroyArrowDelayed(Arrow arrow, float delay)
-	{
+	private void DestroyArrowDelayed(Arrow arrow, float delay) =>
 		Destroy(arrow.gameObject, delay);
-	}
 }
