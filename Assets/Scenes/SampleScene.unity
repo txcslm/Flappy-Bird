@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -262,6 +263,18 @@ MonoBehaviour:
   _enemyGenerator: {fileID: 556933755}
   _startScreen: {fileID: 796216251}
   _endGameScreen: {fileID: 1006295999}
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5980b484469f403d8ac2c07464284257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &556933753
 GameObject:
   m_ObjectHideFlags: 0
@@ -781,7 +794,6 @@ MonoBehaviour:
   _enemyGenerator: {fileID: 556933755}
   _pool: {fileID: 556933756}
   _game: {fileID: 519420034}
-  _objectRemover: {fileID: 0}
 --- !u!4 &1613927683
 Transform:
   m_ObjectHideFlags: 0
@@ -883,11 +895,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2475323758698935015, guid: 667d696a2bd74324eb6b767b5c954398, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.44995117
+      value: -0.4501953
       objectReference: {fileID: 0}
     - target: {fileID: 2475323758698935015, guid: 667d696a2bd74324eb6b767b5c954398, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.3999939
+      value: -0.4000244
       objectReference: {fileID: 0}
     - target: {fileID: 3624650013486592001, guid: 667d696a2bd74324eb6b767b5c954398, type: 3}
       propertyPath: m_Camera
@@ -1214,11 +1226,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3312114940076292535, guid: db3ab5c76a8bc3e4b95f9c41de3cc244, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.84
+      value: -7.08
       objectReference: {fileID: 0}
     - target: {fileID: 3312114940076292535, guid: db3ab5c76a8bc3e4b95f9c41de3cc244, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.52
+      value: 0.08
       objectReference: {fileID: 0}
     - target: {fileID: 3312114940076292535, guid: db3ab5c76a8bc3e4b95f9c41de3cc244, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1258,7 +1270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5586216232539702458, guid: db3ab5c76a8bc3e4b95f9c41de3cc244, type: 3}
       propertyPath: destroyDelay
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
