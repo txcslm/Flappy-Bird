@@ -7,11 +7,11 @@ public class ArrowShooter : MonoBehaviour
 	[SerializeField] private float _shootForce = 10f;
 	[SerializeField] private float _destroyDelay = 3f;
 	
-	private void Update()
-	{
-		if (Input.GetKeyDown(KeyCode.E))
-			Shoot();
-	}
+	private void OnEnable() =>
+		InputManager.OnShoot += Shoot;
+
+	private void OnDisable() =>
+		InputManager.OnShoot -= Shoot;
 
 	private void Shoot()
 	{
